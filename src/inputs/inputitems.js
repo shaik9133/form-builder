@@ -77,8 +77,8 @@ const Inputitems = () => {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="min-h-[100vh] md:w-[100%] mx-auto bg-white rounded-lg p-4 space-y-2 border-2">
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
-          <div className='order-2 md:order-1'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <div className='order-1'>
             <h3>Drag and drop elements</h3>
             <h4>Form elements</h4>
             <div className='grid grid-cols-2 grid-rows-3 gap-y-1'>
@@ -90,7 +90,7 @@ const Inputitems = () => {
               <DraggableItem component={Textfield} type="Textfield" />
             </div>
           </div>
-          <DroppableArea onDrop={handleDrop} droppedItems={droppedItems} className='order-1 md:order-2'/>
+          <DroppableArea onDrop={handleDrop} droppedItems={droppedItems} className='order-2'/>
         </div>
       </div>
     </DndProvider>
